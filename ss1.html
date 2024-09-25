@@ -1,0 +1,151 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crime Rate Prediction</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            padding: 20px;
+        }
+        
+        /* Header Section */
+        header {
+            background-color: #283593;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #283593;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .form-group select {
+            appearance: none;
+        }
+
+        .form-group input[type="date"] {
+            padding: 8px;
+        }
+
+        .form-group button {
+            background-color: #283593;
+            color: white;
+            padding: 15px;
+            border: none;
+            width: 100%;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .form-group button:hover {
+            background-color: #1a237e;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            color: #888;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        Crime Rate Prediction System
+    </header>
+
+    <div class="container">
+        <h2>Predict Crime Rate</h2>
+
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="location">Location</label>
+                <select id="location" name="location" required>
+                    <option value="">Select Location</option>
+                    <option value="city1">City 1</option>
+                    <option value="city2">City 2</option>
+                    <option value="city3">City 3</option>
+                    <option value="city4">City 4</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="time">Time of Day</label>
+                <select id="time" name="time" required>
+                    <option value="">Select Time of Day</option>
+                    <option value="morning">Morning (6 AM - 12 PM)</option>
+                    <option value="afternoon">Afternoon (12 PM - 6 PM)</option>
+                    <option value="evening">Evening (6 PM - 12 AM)</option>
+                    <option value="night">Night (12 AM - 6 AM)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <button type="submit">Predict Crime Rate</button>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        &copy; 2024 Crime Rate Prediction System. All rights reserved.
+    </footer>
+
+</body>
+</html>
